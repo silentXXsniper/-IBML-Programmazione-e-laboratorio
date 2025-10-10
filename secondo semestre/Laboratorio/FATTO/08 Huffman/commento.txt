@@ -1,0 +1,6 @@
+La dimensione del file compresso formato da 5000 caratteri è aumentata ( 5.000 byte -> 5.265 byte ).
+I caratteri sono stati generati in modo casuale, quindi in ogni posizione ciascun carattere aveva 
+esattamente 1 possibilità su 128 di comparire, la compressione ha aumentato lo spazio occupato, dato che ora non ci sono più 
+caratteri che compaiono più frequentemente ( ad esempio in una lingua come l'italiano o l'inglese ci sono lettere usate più 
+frequentemente come le vocali o la spaziatura tra parole e alcuni caratteri tra i 128 non sono mai utilizzati).
+Riguardo i 265 byte aggiuntivi possiamo pensare siano dati dall'intestazione che viene aggiunta per consentire la decompressione.

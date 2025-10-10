@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=ProgrammazioneImperativa
+comment1.params=x\ y
+comment1.target=int\ mcd(int,\ int)
+comment1.text=massimo\ comun\ divisore\r\n\ \ \ \ (define\ mcd\ \r\n\ \ \ \ (lambda\ (x\ y)\r\n\ \ \ \ \ \ \ (cond\ ((\=\ x\ y)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ ((<\ x\ y)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (mcd\ x\ (-\ y\ x))\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (else\ \ \ \:\ x>y\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (mcd\ (-\ x\ y)\ y))\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ))))\r\n
+comment2.params=x\ y
+comment2.target=int\ mcm(int,\ int)
+comment2.text=\r\n\ \ \ \ \ minimo\ comun\ multiplo\r\n
+comment3.params=n
+comment3.target=boolean\ primo(int)
+comment3.text=\r\n\ \ \ \ \ (define\ primo?\r\n\ \ \ \ \ \ (lambda\ (n)\r\n\ \ \ \ \ \ \ (if\ (even?\ n)\r\n\ \ \ \ \ \ \ \ \ \ \ (\=\ n\ 2)\r\n\ \ \ \ \ \ \ \ \ \ \ ...\r\n\ \ \ \ \ \ \ \r\n\ \ \ \ \ (define\ divisori-dispari-in?\r\n\ \ \ \ \ \ (lambda\ (n\ a\ b)\r\n\ \ \ \ \ \ \ \ (cond\ ((>\ a\ b)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ false)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\=\ (remainder\ n\ a)\ 0)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ true)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (else\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (divisori-dispari-in?\ n\ (+\ a\ 2)\ b))\r\n\ \ \ \ \ \ \ \ )\r\n\ \ \ \ \ \ \ \ ))\r\n
+comment4.params=max
+comment4.target=void\ listaPrimi(int)
+comment5.params=btr
+comment5.target=int\ btrVal(java.lang.String)
+comment5.text=\r\n\ \ \ \ \ (define\ btr-val\r\n\ \ \ \ \ (lambda\ (btr)\r\n\ \ \ \ \ \ (let\ (\r\n\ \ \ \ \ \ \ \ \ \ \ \ (k\ (-\ (string-length\ btr)\ 1))\r\n\ \ \ \ \ \ \ \ \ \ \ \ )\r\n\ \ \ \ \ \ \ \ (if\ (\=\ k\ 0)\r\n\ \ \ \ \ \ \ \ \ \ \ \ (btd-val\ btr)\r\n\ \ \ \ \ \ \ \ \ \ \ \ (+(*\ 3\ (btr-val\ (substring\ btr\ 0\ k)))\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ (btd-val\ (substring\ btr\ k))\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ ))\r\n\ \ \ \ \ \ \ \ )))\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ (define\ btd-val\r\n\ \ \ \ \ (lambda\ (btd)\r\n\ \ \ \ \ \ (cond\ ((string\=?\ btd\ "-")\ -1)\r\n\ \ \ \ \ \ \ \ \ \ \ \ ((string\=?\ btd\ ".")\ 0)\r\n\ \ \ \ \ \ \ \ \ \ \ \ ((string\=?\ btd\ "+")\ +1)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ )))\r\n
+comment6.params=btd
+comment6.target=int\ btdVal(java.lang.String)
+comment7.params=n
+comment7.target=int\ ufo(int)
+comment7.text=\ \r\n\ \ \ \ \ (define\ ufo\r\n\ \ \ \ \ (lambda\ (x)\r\n\ \ \ \ \ \ \ \ (cond\ ((\=\ x\ 1)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((even?\ x)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (-\ (*\ 2\ (ufo\ (quotient\ x\ 2)))\ 1))\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (else\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (+\ (*\ 2\ (ufo\ (quotient\ x\ 2)))\ 1)))))\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ |-|\ 1|\ 1|\ 3|\ 1|\ 3|\ 5|\ 7|\ 1|\ 3|\ 5|\ 7|\ 9|\r\n\ \ \ \ \ \ 0\ \ 1\ \ 2\ \ 3\ \ 4\ \ 5\ \ 6\ \ 7\ \ 8\ \ 9\ 10\ \ 11\ 12\r\n
+numComments=8

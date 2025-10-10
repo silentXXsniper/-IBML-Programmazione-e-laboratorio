@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Queens
+comment1.params=n
+comment1.target=int\ numeroDiSoluzioni(int)
+comment2.params=b
+comment2.target=int\ numeroDiCompletamenti(Board)
+comment3.params=n
+comment3.target=SList\ listaDiSoluzioni(int)
+comment4.params=b
+comment4.target=SList\ listaDiCompletamenti(Board)
+comment5.params=n
+comment5.target=void\ visualizzaSoluzioni(int)
+comment6.params=soluzioni\ n
+comment6.target=void\ soluzioniGrafiche(SList,\ int)
+numComments=7

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Node
+comment0.text=\r\n\ Aggiungi\ qui\ una\ descrizione\ della\ classe\ Node\r\n\ \r\n\ @author\ (il\ tuo\ nome)\ \r\n\ @version\ (un\ numero\ di\ versione\ o\ una\ data)\r\n
+comment1.params=c\ w
+comment1.target=Node(char,\ int)
+comment2.params=ln\ rn
+comment2.target=Node(Node,\ Node)
+comment3.params=
+comment3.target=boolean\ isLeaf()
+comment4.params=
+comment4.target=char\ symbol()
+comment5.params=
+comment5.target=int\ weight()
+comment6.params=
+comment6.target=Node\ left()
+comment7.params=
+comment7.target=Node\ right()
+numComments=8

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=IntOps
+comment0.text=\r\n\ \ Compilation\:\ \ javac\ IntOps.java\r\n\ \ Execution\:\ \ \ \ java\ IntOps\ a\ b\r\n\r\n\ \ Illustrates\ the\ integer\ operations\ a\ +\ b,\ a\ *\ b,\ a\ /\ b,\ and\ a\ %\ b.\r\n\r\n\ \ %\ java\ IntOps\ 1234\ 99\r\n\ \ 1234\ +\ 99\ \=\ 1333\r\n\ \ 1234\ *\ 99\ \=\ 122166\r\n\ \ 1234\ /\ 99\ \=\ 12\r\n\ \ 1234\ %\ 99\ \=\ 46\r\n\ \ 1234\ \=\ 12\ *\ 99\ +\ 46\r\n\r\n\ \ %\ java\ IntOps\ 10\ -3\r\n\ \ 10\ +\ -3\ \=\ 7\r\n\ \ 10\ *\ -3\ \=\ -30\r\n\ \ 10\ /\ -3\ \=\ -3\r\n\ \ 10\ %\ -3\ \=\ 1\r\n\ \ 10\ \=\ -3\ *\ -3\ +\ 1\r\n\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

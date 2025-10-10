@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=RecursiveAndTopDownLIS
+comment1.params=s
+comment1.target=int\ llis(int[])
+comment2.params=s\ i\ t
+comment2.target=int\ llisRec(int[],\ int,\ int)
+comment3.params=s
+comment3.target=int\ llisTopDownEZ(int[])
+comment3.text=1.\ Applicazione\ della\ tecnica\ top-down\ in\ situazioni\ semplificate\ -\ FATTO\ (VERAMENTE)
+comment4.params=s\ i\ t\ mem
+comment4.target=int\ llisTopDownRecEZ(int[],\ int,\ int,\ int[][])
+comment5.params=s
+comment5.target=int\ llisTopDown(int[])
+comment5.text=2.\ Applicazione\ della\ tecnica\ top-down\ in\ situazioni\ generali\ -\ FATTO
+comment6.params=s\ i\ j\ mem
+comment6.target=int\ llisTopDownRec(int[],\ int,\ int,\ int[][])
+numComments=7

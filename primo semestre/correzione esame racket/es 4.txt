@@ -1,0 +1,13 @@
+(q       (lambda (a p) (string-append (substring b 1)(substring a 0 1)))                        "1234"  "2345"
+
+) --> ()
+
+(q 7   '() 1
+
+append
+)
+
+(q  22             ""
+
+
+)

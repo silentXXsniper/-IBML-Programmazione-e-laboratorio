@@ -1,0 +1,237 @@
+import huffman_toolkit.*;
+
+import java.util.*;
+
+public class Huffman
+{
+
+    public static int[] charFreq(String src){
+
+        int[] freq = new int[InputTextFile.CHARS];//potresti anche mettere 128 come numero fissato
+
+        for(int c=0; c<freq.length; c++)
+            freq[c]=0;
+
+        InputTextFile in = new InputTextFile(src);  //per provare a capire cosa fa guarda EsempiIO 
+
+        while(in.textAvailable()){
+            char c= in.readChar();
+            freq[c]=freq[c]+1;
+        }
+        in.close();
+        return freq;
+    }   
+
+    public static Node huffmanTree(int[] freq){
+        PriorityQueue<Node> queue= new PriorityQueue<Node>();
+        for(int c=0; c<freq.length; c=c+1){
+            if(freq[c]>0){
+                Node n = new Node((char) c, freq[c]);
+                queue.add(n);
+            }
+            while(queue.size()>1){
+                Node ln = queue.poll();
+                Node rn = queue.poll();
+
+                queue.add(new Node(ln,rn));
+            }
+        }
+        if (queue.isEmpty()) return null;
+        return queue.poll();
+    }
+
+    public static String[] huffmanTable(Node n){
+        String[] tab = new String[InputTextFile.CHARS];
+        Stack<Frame> stack= new Stack<Frame>();
+        stack.push(new Frame("",n));
+
+        do{
+            Frame f = stack.pop();
+            String p = f.path;
+            n= f.node;
+
+            if(n.isLeaf()){
+                tab[n.symbol()]=p;
+            }else{
+                stack.push(new Frame(p + "1", n.right()));
+                stack.push(new Frame(p + "0", n.left()));
+            }
+        }while(!stack.empty());
+
+        return tab;
+    }
+
+    /*  metodi ricorsivi
+    public static String[] huffmanTable(Node root){
+    String[] tab = new String[InputTextFile.CHARS];
+    fillTable("", root, tab );
+    return tab;
+    }
+
+    public static void fillTable(String p, Node n, String [] tab){
+
+    if(n.isLeaf())
+    tab[n.symbol()] = p;
+    else{
+    fillTable(p+"0", n.left(), tab);
+    fillTable(p+"1", n.right(), tab);
+    }   
+    }
+
+    /*   motedodo ricorsivo
+    public static String codeTree(Node n){
+
+    if(n.isLeaf()){
+    char c = n.symbol();
+    if((c=='\\')||(c=='@')){
+    return "\\" + c;
+    }else{
+    return "" + c;
+    }
+    }else{
+    return "@" + codeTree(n.left())+codeTree(n.right());
+    }
+    }
+
+    private static Node retriveTree( InputTextFile in){
+    char c= in.readChar();
+    if(c=='@'){
+    Node ln= retriveTree (in);
+    Node rn = retriveTree(in);
+    return new Node(ln, rn);
+    }else{
+    if(c=='\\'){
+    c=in.readChar();
+    }
+    return new Node(c,0);
+    }
+    }
+     */  
+
+    private static String codeTree(Node n){ //metodo tradizionale
+
+        Stack<Node> stack= new Stack<Node>();
+        stack.push(n);
+        String htcode = "";
+
+        do{
+            n=stack.pop();
+
+            if(n.isLeaf()){
+                char c = n.symbol();
+                if((c=='\\')||(c=='@')){
+                    htcode=htcode + "\\" + c;
+                }else{
+                    htcode=htcode + c;
+                }
+            }else{
+                htcode=htcode + "@";
+                stack.push(n.right());
+                stack.push(n.left());
+            }
+
+        }while(!stack.empty());
+
+        return htcode;
+    }
+
+    public static void compress(String src, String dst){
+        int[] freq = charFreq(src);
+        Node tree= huffmanTree(freq);
+        String htcode=codeTree(tree);
+        String[] tab = huffmanTable(tree);
+
+        InputTextFile in = new InputTextFile(src);  //per provare a capire cosa fa guarda EsempiIO 
+        OutputTextFile out = new OutputTextFile(dst);  //per provare a capire cosa fa guarda EsempiIO 
+
+        out.writeTextLine("" + tree.weight());
+        out.writeTextLine(htcode);
+
+        while(in.textAvailable()){
+
+            char c= in.readChar();
+            out.writeCode(tab[c]); 
+        }
+
+        in.close();
+        out.close();
+
+    }
+
+    public static void decompress(String src, String dst){
+
+        InputTextFile in = new InputTextFile(src);  //per provare a capire cosa fa guarda EsempiIO 
+        OutputTextFile out = new OutputTextFile(dst);  //per provare a capire cosa fa guarda EsempiIO 
+
+        String num= in.readTextLine();
+        int size=Integer.parseInt(num);
+
+        Node root=retriveTree(in);
+        String dummy = in.readTextLine();
+
+        for(int i=0; i<size; i=i+1){
+
+            char c= retriveChar(root, in );
+            out.writeChar(c); 
+        }
+
+        in.close();
+        out.close();
+
+    }
+
+    private static Node retriveTree( InputTextFile in){  //versione nuova
+        Stack<EvolvFrame> stack= new Stack<EvolvFrame>();
+        stack.push(new EvolvFrame());
+        Node n = null;
+        do{
+            EvolvFrame f = stack.peek();
+
+            switch(f.state){
+
+                case 0: {
+                        char c= in.readChar();
+                        if(c=='@'){
+                            f.state=1;
+                            stack.push(new EvolvFrame());
+                        }else{
+                            if(c=='\\'){
+                                c=in.readChar();
+                            }
+                            n = new Node (c, 0);
+                            stack.pop();
+                        }
+                        break;
+                    }
+                case 1: {
+                        f.lft = n;
+                        f.state = 2;
+                        stack.push(new EvolvFrame());
+                        break;
+                    }
+                case 2: {
+                        f.rgt=n;
+                        n = new Node(f.lft, f.rgt);
+                        break;
+                    }
+            }
+
+        }while (!stack.empty());
+
+        return n;
+    }
+
+    private static char retriveChar(Node n, InputTextFile in){
+        do {
+            int bit = in.readBit();
+
+            if(bit == 0)
+                n = n.left();
+            else
+                n = n.right();
+
+        }while( !n.isLeaf());
+
+        return n.symbol();
+    }
+} //class Huffman

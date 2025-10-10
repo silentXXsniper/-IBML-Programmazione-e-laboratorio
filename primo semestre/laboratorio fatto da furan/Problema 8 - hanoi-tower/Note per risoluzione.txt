@@ -1,0 +1,5 @@
+    Ricorsione di coda suggerita per la conta delle mosse per shtick:
+Si baserebbe sul fatto che io posso conoscere la posizione del disco di diametro maggiore su n dischi quando
+mi trovo nella mossa 2^(n-1), che è la mossa esattamente a metà del numero di mosse necessarie che è 2^(n)-1.
+    Con una suddivisione procedurale in sostanza io non faccio altro che ridurmi il range di n e contare, probabilmente a partire dall'intervallo di n maggiore fino a quello minore
+con caso base -> n = 1 che implica 1 spostamento (dallo shtick di partenza a quello di arrivo che riceve incremento +1).

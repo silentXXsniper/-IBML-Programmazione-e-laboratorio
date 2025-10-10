@@ -1,0 +1,7 @@
+(define p
+  (lambda (f x y k)
+   (if (= k 0)
+       null
+       (cons x (p f y (f x y)(- k 1)))
+                  )
+             ))

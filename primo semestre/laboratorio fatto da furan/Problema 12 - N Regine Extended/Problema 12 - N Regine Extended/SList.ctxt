@@ -1,0 +1,31 @@
+#BlueJ class context
+comment0.target=SList
+comment0.text=\r\n\ Classe\ SList<T>\:\ Scheme-like\ Lists\ di\ elementi\ di\ classe/tipo\ T\r\n\ \r\n\ \ \ SList<T>\ s,\ t,\ u\:\r\n\ \ \ T\ x;\r\n\ \ \ \r\n\ \ \ \ \ \ s\ \=\ new\ SList();\r\n\ \ \ \ \ \ t\ \=\ new\ SList(T\ x,\ SList\ s);\r\n\ \ \ \ \ \ \r\n\ \ \ \ \ \ boolean\ b\ \=\ t.isNull();\r\n\ \ \ \ \ \ x\ \=\ t.car()\r\n\ \ \ \ \ \ u\ \=\ t.cdr();\r\n\ \ \ \ \ \ u\ \=\ t.cons(x);\r\n\ \ \ \r\n
+comment1.params=
+comment1.target=SList()
+comment10.params=sl
+comment10.target=boolean\ equals(SList)
+comment11.params=sl
+comment11.target=SList\ append(SList)
+comment12.params=
+comment12.target=SList\ reverse()
+comment13.params=sl
+comment13.target=SList\ reverseTree(SList)
+comment2.params=x\ t
+comment2.target=SList(java.lang.Object,\ SList)
+comment3.params=x
+comment3.target=SList\ cons(java.lang.Object)
+comment4.params=
+comment4.target=java.lang.Object\ car()
+comment5.params=
+comment5.target=SList\ cdr()
+comment6.params=
+comment6.target=boolean\ isNull()
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment8.params=
+comment8.target=int\ length()
+comment9.params=i
+comment9.target=java.lang.Object\ listRef(int)
+comment9.text=\ \r\nAlternativa\ professore\ (migliore)
+numComments=14

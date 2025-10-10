@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=RecursiveAndBottomUpLDS
+comment1.params=s
+comment1.target=int\ llds(int[])
+comment1.text=1.\ Sottosequenza\ decrescente\ pi\u00F9\ lunga\ -\ FATTO
+comment2.params=s\ i\ t
+comment2.target=int\ lldsRec(int[],\ int,\ int)
+comment3.params=s
+comment3.target=int\ getRoof(int[])
+comment3.text=\r\n\ s\ \:\ sequenza\ di\ numeri\r\n\ i\ \:\ indice\ che\ scorre\ la\ sequenza\ \ \ \ \ \ \ [0\ all'inizio]\r\n\ j\ \:\ indice\ che\ punta\ al\ numero\ maggiore\ [0\ all'inizio]\r\n\ \r\n\ val\ \:\ valore\ maggiore\ della\ sequenza\ +\ 1;\ (+1\ cos\u00EC\ che\ confrontandolo\ con\ se\ stesso\ nel\ programma\ ricorsivo\ questo\ venga\ contato)\r\n
+comment4.params=s\ i\ j
+comment4.target=int\ getRoofSupp(int[],\ int,\ int)
+comment5.params=s
+comment5.target=int\ lldsDP(int[])
+comment5.text=2.1.\ Applicazione\ della\ tecnica\ di\ programmazione\ dinamica\ bottom-up\ (llds)\ -\ FATTA
+comment6.params=s
+comment6.target=int[]\ ldsDP(int[])
+comment6.text=2.\ Applicazione\ della\ tecnica\ di\ programmazione\ dinamica\ bottom-up\ (lds)\ -\ FATTA
+numComments=7

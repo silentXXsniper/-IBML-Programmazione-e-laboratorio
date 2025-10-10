@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=rec
+comment0.text=\r\n\ esercitazione\ d'esame\r\n
+comment1.params=x\ y\ z
+comment1.target=long\ rec(int,\ int,\ int)
+comment2.params=x\ y\ z
+comment2.target=long\ recPD(int,\ int,\ int)
+comment2.text=\r\n\ con\ valori\ rec(8,5,12)\ ci\ si\ chiede\:\r\n\ valore\ pi\u00F9\ piccolo\ di\ x\ \ \=\ \ 1\r\n\ valore\ pi\u00F9\ piccolo\ di\ y\ \ \=\ \ 5\r\n\ valore\ pi\u00F9\ piccolo\ di\ z\ \ \=\ 12\r\n\ valore\ pi\u00F9\ grande\ di\ x\ \ \ \=\ \ 8\r\n\ valore\ pi\u00F9\ grande\ di\ y\ \ \ \=\ 12\r\n\ valore\ pi\u00F9\ grande\ di\ z\ \ \ \=\ 12x\r\n\ \r\n\ converti\ il\ codice\ per\ renderlo\ pi\u00F9\ efficente\r\n
+numComments=3

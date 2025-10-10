@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Puzzle
+comment1.params=n
+comment1.target=Puzzle(int)
+comment2.params=moves
+comment2.target=void\ shuffle(int)
+comment3.params=
+comment3.target=int[][]\ getBoard()
+comment4.params=
+comment4.target=boolean\ isSolved()
+comment5.params=tile
+comment5.target=boolean\ canMove(int)
+comment6.params=tile
+comment6.target=boolean\ move(int)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

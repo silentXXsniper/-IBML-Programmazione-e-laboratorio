@@ -1,0 +1,27 @@
+import huffman_toolkit.*;
+/**
+ * Aggiungi qui una descrizione della classe EsempiIO
+ * 
+ * @author (il tuo nome) 
+ * @version (un numero di versione o una data)
+ */
+public class EsempiIO
+{
+    public static int copiaFile(String src, String dst){
+        InputTextFile in = new InputTextFile(src);
+        OutputTextFile out= new OutputTextFile(dst);
+        
+        int count = 0;
+        
+        while(in.textAvailable()){
+            String linea=in.readTextLine();
+            out.writeTextLine(linea);
+            
+            count=count++;
+        }
+        in.close();
+        out.close();
+        
+        return count;
+    }
+}

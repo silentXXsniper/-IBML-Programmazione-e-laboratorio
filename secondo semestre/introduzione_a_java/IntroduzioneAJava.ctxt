@@ -1,0 +1,33 @@
+#BlueJ class context
+comment0.target=IntroduzioneAJava
+comment1.params=r\ h
+comment1.target=double\ suptotCilindro(double,\ double)
+comment10.params=k
+comment10.target=double\ s2(int)
+comment11.params=btr
+comment11.target=int\ btrVal(java.lang.String)
+comment11.text=\r\n\ \ \ \ \ (define\ btr-val\r\n\ \ \ \ \ (lambda\ (btr)\r\n\ \ \ \ \ \ (let\ (\r\n\ \ \ \ \ \ \ \ \ \ \ \ (k\ (-\ (string-length\ btr)\ 1))\r\n\ \ \ \ \ \ \ \ \ \ \ \ )\r\n\ \ \ \ \ \ \ \ (if\ (\=\ k\ 0)\r\n\ \ \ \ \ \ \ \ \ \ \ \ (btd-val\ btr)\r\n\ \ \ \ \ \ \ \ \ \ \ \ (+(*\ 3\ (btr-val\ (substring\ btr\ 0\ k)))\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ (btd-val\ (substring\ btr\ k))\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ ))\r\n\ \ \ \ \ \ \ \ )))\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ (define\ btd-val\r\n\ \ \ \ \ (lambda\ (btd)\r\n\ \ \ \ \ \ (cond\ ((string\=?\ btd\ "-")\ -1)\r\n\ \ \ \ \ \ \ \ \ \ \ \ ((string\=?\ btd\ ".")\ 0)\r\n\ \ \ \ \ \ \ \ \ \ \ \ ((string\=?\ btd\ "+")\ +1)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ )))\r\n
+comment12.params=btd
+comment12.target=int\ btdVal(java.lang.String)
+comment13.params=n
+comment13.target=int\ fibonacci(int)
+comment13.text=\r\n\ \ \ \ \ (define\ fibonacci\r\n\ \ \ \ \ (lambda\ (n)\r\n\ \ \ \ \ \ \ (if\ (<\ n\ 2)\r\n\ \ \ \ \ \ \ \ \ \ \ 1\r\n\ \ \ \ \ \ \ \ \ \ \ (+\ (fibonacci\ (-\ n\ 2))\ (fibonacci\ (-\ n\ 1)))\r\n\ \ \ \ \ \ \ \ \ \ \ )))\r\n
+comment2.params=sm
+comment2.target=java.lang.String\ pluraleSm(java.lang.String)
+comment3.params=s
+comment3.target=java.lang.String\ radiceSost(java.lang.String)
+comment4.params=sf
+comment4.target=java.lang.String\ pluraleSf(java.lang.String)
+comment5.params=s
+comment5.target=boolean\ femminile(java.lang.String)
+comment6.params=s
+comment6.target=boolean\ femminile2(java.lang.String)
+comment7.params=s
+comment7.target=java.lang.String\ plurale(java.lang.String)
+comment7.text=\r\n\ \ \ \ \ \ (define\ plurale\r\n\ \ \ \ \ \ \ (lambda\ (s)\r\n\ \ \ \ \ \ \ \ (if\ (femminile?\ s)\r\n\ \ \ \ \ \ \ \ \ \ \ \ (plurale-sf\ s)\r\n\ \ \ \ \ \ \ \ \ \ \ \ (plurale-sm\ s)\r\n\ \ \ \ \ \ \ \ )))\r\n
+comment8.params=s
+comment8.target=java.lang.String\ plurale2(java.lang.String)
+comment9.params=k
+comment9.target=double\ s(int)
+comment9.text=\r\n\ \ \ \ \ dimensione\ foglio\ an\r\n\ \ \ \ \ (define\r\n\ \ \ \ \ (lambda\ (k)\r\n\ \ \ \ \ (if\ (<\ k\ 2)\r\n\ \ \ \ \ \ \ \ \ \ (if\ (\=\ k\ 0)\ S0\ S1)\r\n\ \ \ \ \ \ \ \ \ \ (/\ (S\ (-\ k\ 2))\ 2)\r\n\ \ \ \ \ \ \ \ \ \ )))\r\n\ \ \ \ \ (define\ S0\ (*\ 100\ (expt\ 2\ 1/4)))\r\n\ \ \ \ \ (define\ S1\ (*\ 100\ (expt\ 2\ -1/4)))\r\n\ \ \ \ \ \r\n
+numComments=14

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=RoundTable3
+comment0.text=\r\n\ Classe\ RoundTable\:\r\n\r\n\ Modello\ alla\ base\ del\ problema\ di\ Giuseppe\ Flavio\r\n\ (rivisto\ in\ termini\ di\ cavalieri\ attorno\ al\ tavolo)\r\n\r\n\ Gli\ oggetti\ creati\ sono\ "immutabili".\r\n\r\n\ Ultimo\ aggiornamento\:\ 25/03/2021\r\n\r\n\r\n\ Protocollo\:\r\n\r\n\ \ \ RoundTable\ ini\ \=\ new\ RoundTable(\ n\ );\r\n\r\n\ \ \ RoundTable\ cfg\ ...\r\n\r\n\ \ \ \ \ cfg.numberOfKnights()\ \:\ \ int\r\n\ \ \ \ \ cfg.kinghtWithJug()\ \ \ \:\ \ int\ \ (etichette)\r\n\r\n\ \ \ \ \ cfg.serveNeighbour()\ \ \:\ \ RoundTable\r\n\ \ \ \ \ cfg.passJug()\ \ \ \ \ \ \ \ \ \:\ \ RoundTable\r\n
+comment1.params=n
+comment1.target=RoundTable3(int)
+comment2.params=n\ j\ h\ t
+comment2.target=RoundTable3(int,\ int,\ IntSList,\ IntSList)
+comment3.params=
+comment3.target=int\ numberOfKnights()
+comment4.params=
+comment4.target=int\ knightWithJug()
+comment5.params=
+comment5.target=RoundTable3\ serveNeighbour()
+comment6.params=
+comment6.target=RoundTable3\ passJug()
+comment7.params=inf\ sup
+comment7.target=IntSList\ range(int,\ int)
+numComments=8

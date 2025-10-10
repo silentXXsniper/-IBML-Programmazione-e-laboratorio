@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=NodeQueue
+comment1.params=
+comment1.target=NodeQueue()
+comment2.params=
+comment2.target=int\ size()
+comment3.params=
+comment3.target=Node\ peek()
+comment4.params=
+comment4.target=int\ lower()
+comment5.params=
+comment5.target=Node\ poll()
+comment6.params=n
+comment6.target=void\ add(Node)
+numComments=7

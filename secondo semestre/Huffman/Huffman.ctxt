@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Huffman
+comment1.params=src
+comment1.target=int[]\ charFreq(java.lang.String)
+comment2.params=freq
+comment2.target=Node\ huffmanTree(int[])
+comment3.params=n
+comment3.target=java.lang.String[]\ huffmanTable(Node)
+comment4.params=n
+comment4.target=java.lang.String\ codeTree(Node)
+comment4.text=\ \ metodi\ ricorsivi\r\n\ \ \ \ public\ static\ String[]\ huffmanTable(Node\ root){\r\n\ \ \ \ String[]\ tab\ \=\ new\ String[InputTextFile.CHARS];\r\n\ \ \ \ fillTable("",\ root,\ tab\ );\r\n\ \ \ \ return\ tab;\r\n\ \ \ \ }\r\n\r\n\ \ \ \ public\ static\ void\ fillTable(String\ p,\ Node\ n,\ String\ []\ tab){\r\n\r\n\ \ \ \ if(n.isLeaf())\r\n\ \ \ \ tab[n.symbol()]\ \=\ p;\r\n\ \ \ \ else{\r\n\ \ \ \ fillTable(p+"0",\ n.left(),\ tab);\r\n\ \ \ \ fillTable(p+"1",\ n.right(),\ tab);\r\n\ \ \ \ }\ \ \ \r\n\ \ \ \ }\r\n\r\n\ \ \ \ /*\ \ \ motedodo\ ricorsivo\r\n\ \ \ \ public\ static\ String\ codeTree(Node\ n){\r\n\r\n\ \ \ \ if(n.isLeaf()){\r\n\ \ \ \ char\ c\ \=\ n.symbol();\r\n\ \ \ \ if((c\=\='\\\\')||(c\=\='@')){\r\n\ \ \ \ return\ "\\\\"\ +\ c;\r\n\ \ \ \ }else{\r\n\ \ \ \ return\ ""\ +\ c;\r\n\ \ \ \ }\r\n\ \ \ \ }else{\r\n\ \ \ \ return\ "@"\ +\ codeTree(n.left())+codeTree(n.right());\r\n\ \ \ \ }\r\n\ \ \ \ }\r\n\r\n\ \ \ \ private\ static\ Node\ retriveTree(\ InputTextFile\ in){\r\n\ \ \ \ char\ c\=\ in.readChar();\r\n\ \ \ \ if(c\=\='@'){\r\n\ \ \ \ Node\ ln\=\ retriveTree\ (in);\r\n\ \ \ \ Node\ rn\ \=\ retriveTree(in);\r\n\ \ \ \ return\ new\ Node(ln,\ rn);\r\n\ \ \ \ }else{\r\n\ \ \ \ if(c\=\='\\\\'){\r\n\ \ \ \ c\=in.readChar();\r\n\ \ \ \ }\r\n\ \ \ \ return\ new\ Node(c,0);\r\n\ \ \ \ }\r\n\ \ \ \ }\r\n
+comment5.params=src\ dst
+comment5.target=void\ compress(java.lang.String,\ java.lang.String)
+comment6.params=src\ dst
+comment6.target=void\ decompress(java.lang.String,\ java.lang.String)
+comment7.params=in
+comment7.target=Node\ retriveTree(huffman_toolkit.InputTextFile)
+comment8.params=n\ in
+comment8.target=char\ retriveChar(Node,\ huffman_toolkit.InputTextFile)
+numComments=9

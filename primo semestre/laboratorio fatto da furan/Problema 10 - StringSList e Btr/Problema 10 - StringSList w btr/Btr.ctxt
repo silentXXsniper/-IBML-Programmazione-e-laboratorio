@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Btr
+comment0.text=\n\ Dati\ in\ input\:\n\ \ String\ btr\ \=\ rappresentazione\ di\ un\ numero\ intero\ non\ negativo\ in\ btr\n\ \ int\ \ \ \ n\ \ \ \=\ numero\ interno\ non\ negativo\n\ Restituisce\ in\ output\ la\ lista\ di\ n\ numeri\ consecutivi\ a\ partire\ dal\ numero\ rappresentato\ da\ btr;\n\ \n\ Se\ n\ \=\ 5\ e\ btr\ rappresenta\ 3,\ restituire\ una\ lista\ (in\ btr)\ di\ 3,\ 4,\ 5,\ 6,\ 7.\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=btr\ n
+comment2.target=java.util.ArrayList\ btrConsecutives(java.lang.String,\ int)
+comment3.params=btr\ n\ list
+comment3.target=java.util.ArrayList\ btrConsecutivesSupp(java.lang.String,\ int,\ java.util.ArrayList)
+comment4.params=btr
+comment4.target=java.lang.String\ btrSucc(java.lang.String)
+numComments=5

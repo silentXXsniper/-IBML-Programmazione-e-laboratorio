@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Queens2
+comment0.text=\r\n\ Rompicapo\ delle\ "n\ regine"\r\n\r\n\ Ultimo\ aggiornamento\:\ 12/04/2018\r\n\r\n\r\n\ Dato\ astratto\ "configurazione\ della\ scacchiera"\:\ \ Board\r\n\r\n\ Operazioni\:\r\n\r\n\ \ \ new\ Board(\ int\ n\ )\ \ \ \ \ \ \ \ \ \ \ \:\ \ costruttore\ (scacchiera\ vuota)\r\n\r\n\ \ \ size()\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \:\ \ int\r\n\r\n\ \ \ queensOn()\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \:\ \ int\r\n\r\n\ \ \ underAttack(\ int\ i,\ int\ j\ )\ \ \:\ \ boolean\r\n\r\n\ \ \ addQueen(\ int\ i,\ int\ j\ )\ \ \ \ \ \:\ \ Board\r\n\r\n\ \ \ arrangement()\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \:\ \ String\r\n\r\n\r\n\ Board\ b;\r\n\r\n\ \ \ new\ Board(n)\ \ \ \ \ \ \ \ \ \ \ costruttore\ della\ scacchiera\ n\ x\ n\ vuota;\r\n\ \ \ b.size()\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dimensione\ n\ della\ scacchiera\ b;\r\n\ \ \ b.queensOn()\ \ \ \ \ \ \ \ \ \ \ numero\ di\ regine\ collocate\ nella\ scacchiera\ b;\r\n\ \ \ b.underAttack(i,j)\ \ \ \ \ la\ posizione\ <i,j>\ e'\ minacciata?\r\n\ \ \ b.addQueen(i,j)\ \ \ \ \ \ \ \ scacchiera\ che\ si\ ottiene\ dalla\ configurazione\ b\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ aggiungendo\ una\ nuova\ regina\ in\ posizione\ <i,j>\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (si\ assume\ che\ la\ posizione\ non\ sia\ minacciata);\r\n\ \ \ b.arrangement()\ \:\ \ \ \ \ \ descrizione\ "esterna"\ della\ configurazione\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (convenzioni\ scacchistiche).\r\n
+comment1.params=n
+comment1.target=int\ numberOfSolutions(int)
+comment2.params=b
+comment2.target=int\ numberOfCompletions(Board)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

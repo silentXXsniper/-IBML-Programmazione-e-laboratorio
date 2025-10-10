@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TavRotonda
+comment1.params=n
+comment1.target=TavRotonda(int)
+comment2.params=
+comment2.target=int\ numCavalieri()
+comment3.params=
+comment3.target=int\ cavConBrocca()
+comment4.params=
+comment4.target=void\ serve()
+comment5.params=
+comment5.target=void\ passa()
+numComments=6

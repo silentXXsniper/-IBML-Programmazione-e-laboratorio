@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=BoardMod2
+comment1.params=n
+comment1.target=BoardMod2(int)
+comment10.params=
+comment10.target=java.lang.String\ extendedToString()
+comment11.params=
+comment11.target=void\ seeConfig()
+comment2.params=n\ q\ cfg\ rsI\ csI\ drI\ dlI
+comment2.target=BoardMod2(int,\ int,\ java.lang.String,\ SList,\ SList,\ SList,\ SList)
+comment3.params=
+comment3.target=int\ size()
+comment4.params=
+comment4.target=int\ queensOn()
+comment5.params=
+comment5.target=java.lang.String\ arrangement()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment7.params=i\ j
+comment7.target=boolean\ underAttack(int,\ int)
+comment8.params=value\ dimension
+comment8.target=boolean\ underAttackSupp(int,\ SList)
+comment9.params=i\ j
+comment9.target=BoardMod2\ addQueen(int,\ int)
+numComments=12

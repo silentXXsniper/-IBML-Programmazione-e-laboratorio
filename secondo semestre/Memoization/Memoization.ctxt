@@ -1,0 +1,37 @@
+#BlueJ class context
+comment0.target=Memoization
+comment1.params=n
+comment1.target=long\ fibonacci(int)
+comment1.text=\ Numeri\ di\ Fibonacci\ (tree\ recursion)\r\n\ \ \ \ (define\ fibonacci\r\n\ \ \ \ (lambda\ (n)\ \ \ \ \ \ ;\ n\ naturale\r\n\ \ \ \ (if\ (<\ n\ 2)\r\n\ \ \ \ 1\r\n\ \ \ \ (+\ (fibonacci\ (-\ n\ 2))\ (fibonacci\ (-\ n\ 1)))\r\n\ \ \ \ )\r\n\ \ \ \ ))\r\n
+comment10.params=i\ j
+comment10.target=long\ manhattanDp(int,\ int)
+comment11.params=u\ v
+comment11.target=int\ llcs(java.lang.String,\ java.lang.String)
+comment12.params=u\ v\ mem
+comment12.target=int\ llcsRec(java.lang.String,\ java.lang.String,\ int[][])
+comment13.params=u\ v
+comment13.target=java.lang.String\ lcs(java.lang.String,\ java.lang.String)
+comment14.params=u\ v\ mem
+comment14.target=java.lang.String\ lcsRec(java.lang.String,\ java.lang.String,\ java.lang.String[][])
+comment15.params=u\ v
+comment15.target=java.lang.String\ longer(java.lang.String,\ java.lang.String)
+comment16.params=u\ v
+comment16.target=java.lang.String\ llcsDP(java.lang.String,\ java.lang.String)
+comment2.params=n
+comment2.target=long\ fibonacciMem(int)
+comment3.params=n\ mem
+comment3.target=long\ fibonacciRec(int,\ long[])
+comment4.params=n
+comment4.target=java.math.BigInteger\ fibonacciBig(int)
+comment5.params=n\ mem
+comment5.target=java.math.BigInteger\ fibonacciBigRec(int,\ java.math.BigInteger[])
+comment6.params=n
+comment6.target=long\ fibonacciDp(int)
+comment7.params=i\ j
+comment7.target=long\ manhattan(int,\ int)
+comment7.text=\ Problema\ dei\ "Percorsi\ di\ Manhattan"\r\n\ \ \ \ (define\ manhattan\r\n\ \ \ \ (lambda\ (i\ j)\ \ \ \ ;\ i,\ j\ naturali\r\n\ \ \ \ (if\ (or\ (\=\ i\ 0)\ (\=\ j\ 0))\r\n\ \ \ \ 1\r\n\ \ \ \ (+\ (manhattan\ (-\ i\ 1)\ j)\ (manhattan\ i\ (-\ j\ 1)))\r\n\ \ \ \ )\r\n\ \ \ \ ))\r\n
+comment8.params=i\ j
+comment8.target=long\ manhattanMem(int,\ int)
+comment9.params=i\ j\ mem
+comment9.target=long\ manhattanRec(int,\ int,\ long[][])
+numComments=17

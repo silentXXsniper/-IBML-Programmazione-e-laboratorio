@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.target=Board
+comment0.text=\n\ Board\ b;\n\ int\ n;\n\ \n\ b\ \=\ new\ Board(n)\n\ \n\ b.size()\n
+numComments=1
