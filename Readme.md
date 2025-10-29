@@ -1,0 +1,47 @@
+    <style>
+        h1{
+            font-family: 'Georgia';
+            color: #34495e;
+            border-bottom: 5px solid #3498db;
+            padding-bottom: 10px;
+            
+        }
+
+        h2{
+            font-family: 'Georgia';
+            color: #34495e;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            
+        }
+            
+        p {
+            font-family: 'Arial';
+            font-size: 16px;
+            color: #2c3e50;
+            margin-top: 20px;
+            
+        }
+        
+        ul{
+        
+            color: #34495e;
+            font-size: 16px;
+        
+        }
+        
+        .reveal .slides section {
+        overflow-y: auto !important;
+        height: 100% !important;
+    }
+</style>
+
+# Corso 2024-2025
+
+All'interno sono presenti la maggior parte degli esercizi visti a lezione di programmazione.
+
+Sono presenti tutti gli esercizi di laboratorio di DrRacket e Java
+
+<p>DrRacket utilizza il linguaggio "Intermediate Student with Lambda" con alcune estensioni scaricabili dal sito <a href="https://users.dimi.uniud.it/~claudio.mirolo/teaching/programmazione/">Del professor Mirolo</a> o comunque già presenti all'interno della cartella /programmi/DrRacket estensioni</p>
+
+<p>Java utilizza <a href="https://www.bluej.org/">BlueJ</a>, programma che abbiamo utilizzato per tutta la durata del corso</p>
