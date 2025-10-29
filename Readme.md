@@ -6,6 +6,8 @@
             padding-bottom: 10px;
             
         }
+<img src="./primo%20semestre/LOGO_UDINE.jpg" alt="Logo Università di Udine" style="float:right; width:140px; margin:8px 0 0 10px;" />
+```markdown
 
         h2{
             font-family: 'Georgia';
