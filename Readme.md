@@ -6,7 +6,7 @@
             padding-bottom: 10px;
             
         }
-<img src="./primo%20semestre/LOGO_UDINE.jpg" alt="Logo Università di Udine" style="float:right; width:140px; margin:8px 0 0 10px;" />
+<img src="./primo_semestre/LOGO_UDINE.jpg" alt="Logo Università di Udine" style="float:right; width:140px; margin:8px 0 0 10px;" />
 ```markdown
 
         h2{
@@ -21,29 +21,71 @@
             font-family: 'Arial';
             font-size: 16px;
             color: #2c3e50;
-            margin-top: 20px;
-            
-        }
-        
-        ul{
-        
-            color: #34495e;
-            font-size: 16px;
-        
-        }
-        
-        .reveal .slides section {
-        overflow-y: auto !important;
-        height: 100% !important;
-    }
-</style>
+            <!doctype html>
+            <html lang="it">
+            <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width,initial-scale=1">
+                <title>Corso 2024-2025 — Programmazione</title>
+                <style>
+                    :root{
+                        --primary:#3498db;
+                        --dark:#2c3e50;
+                        --muted:#7f8c8d;
+                        --bg:#ffffff;
+                        --max-width:980px;
+                    }
+                    html,body{height:100%;margin:0;background:var(--bg);font-family:Arial, sans-serif;color:var(--dark)}
+                    .container{max-width:var(--max-width);margin:28px auto;padding:20px}
 
-# Corso 2024-2025
+                    /* Header: use float for logo so text wraps to the left */
+                    .header{overflow:auto;padding-bottom:6px}
+                    .brand{overflow:hidden}
+                    .brand h1{margin:0;font-family:Georgia,serif;color:var(--dark);font-size:32px}
+                    .brand p{margin:6px 0 0;color:var(--muted)}
+                    .logo{float:right;max-width:160px;height:auto;border-radius:6px;margin-left:18px}
 
-All'interno sono presenti la maggior parte degli esercizi visti a lezione di programmazione.
+                    /* Content */
+                    hr{border:0;border-bottom:3px solid rgba(52,73,94,0.06);margin:20px 0}
+                    h2{font-family:Georgia,serif;color:var(--dark);border-bottom:3px solid var(--primary);padding-bottom:8px}
+                    p, li{line-height:1.6;color:var(--dark);font-size:16px}
+                    a{color:var(--primary)}
 
-Sono presenti tutti gli esercizi di laboratorio di DrRacket e Java
+                    /* Utility */
+                    .card{background:#fbfcfd;border:1px solid #eef3f7;padding:14px;border-radius:8px}
 
-<p>DrRacket utilizza il linguaggio "Intermediate Student with Lambda" con alcune estensioni scaricabili dal sito <a href="https://users.dimi.uniud.it/~claudio.mirolo/teaching/programmazione/">Del professor Mirolo</a> o comunque già presenti all'interno della cartella /programmi/DrRacket estensioni</p>
+                    /* Responsive */
+                    @media (max-width:720px){
+                        /* On small screens stop floating and center the logo */
+                        .logo{float:none;display:block;margin:12px 0 0 0;max-width:120px}
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    <header class="header">
+                        <div class="brand">
+                            <h1>Corso 2024-2025</h1>
+                            <p>All'interno sono presenti la maggior parte degli esercizi visti a lezione di programmazione.</p>
+                        </div>
+                        <!-- Note: path to the image uses percent-encoding for the space in the folder name. If you rename the folder to 'primo_semestre' update the src accordingly. -->
+                        <img class="logo" src="./primo%20semestre/LOGO_UDINE.jpg" alt="Logo Università di Udine">
+                    </header>
 
-<p>Java utilizza <a href="https://www.bluej.org/">BlueJ</a>, programma che abbiamo utilizzato per tutta la durata del corso</p>
+                    <hr>
+
+                    <section>
+                        <div class="card">
+                            <h2>Panoramica</h2>
+                            <p>Sono presenti tutti gli esercizi di laboratorio di DrRacket e Java.</p>
+
+                            <p>DrRacket utilizza il linguaggio "Intermediate Student with Lambda" con alcune estensioni scaricabili dal sito <a href="https://users.dimi.uniud.it/~claudio.mirolo/teaching/programmazione/">Del professor Mirolo</a> o comunque già presenti all'interno della cartella <code>/programmi/DrRacket estensioni</code>.</p>
+
+                            <p>Java utilizza <a href="https://www.bluej.org/">BlueJ</a>, programma che abbiamo utilizzato per tutta la durata del corso.</p>
+                        </div>
+                    </section>
+
+                    <footer style="margin-top:26px;color:var(--muted);font-size:14px">Generated from repository README — visualizzazione tramite GitHub Pages (docs/)</footer>
+                </div>
+            </body>
+            </html>
