@@ -2,9 +2,9 @@
 <!-- Note: GitHub Markdown doesn't allow <style> or custom CSS, so inline styles are used where possible. -->
 
 <div align="center">
-  <img src="primo_semestre/LOGO_UDINE.jpg" alt="Logo Università di Udine" width="160" style="border-radius:8px;">
-  <h1 style="color:#2c3e50;">Corso 2024–2025</h1>
+  <h1 style="color:#2c3e50;">IBML Programmazione e Laboratorio - Corso 2024–2025</h1>
   <p style="color:#7f8c8d;">All'interno sono presenti la maggior parte degli esercizi visti a lezione di programmazione.</p>
+  <img src="primo_semestre/LOGO_UDINE.jpg" alt="Logo Università di Udine" width="160" style="border-radius:8px;">
 </div>
 
 ---
