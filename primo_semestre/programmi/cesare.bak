@@ -1,0 +1,21 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname cesare) (read-case-sensitive #t) (teachpacks ((lib "drawings.ss.txt" "installed-teachpacks"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "drawings.ss.txt" "installed-teachpacks")) #f)))
+(define aA (char->integer #\A))
+(define aZ (char->integer #\Z))
+(define n-car 26)
+
+(define rgl-cesare ;val algoritmo
+  (lambda (crt)
+
+    (let (
+          (new-ascii (+ 1 (char-integer crt))
+                     )
+          (if (= new-ascii a2)
+              (integer ->char new-ascii)
+              (integer ->char (- new-ascii n-car))
+              )
+          )
+      ))
+  )
+ 

@@ -1,0 +1,34 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname |esercizio L terzo|) (read-case-sensitive #t) (teachpacks ((lib "drawings.ss.txt" "installed-teachpacks"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "drawings.ss.txt" "installed-teachpacks")) #f)))
+(define (L-tessellation L)
+  (cond [(= L 1) L-tile]
+        [(= L 2) L-media]
+        [else (calcolo-L L)]
+        ))
+
+(define (L-media x)  
+    (glue-tiles
+     (glue-tiles
+      (glue-tiles L-tile (shift-right (quarter-turn-right L-tile) 1))
+      (shift-right (shift-down L-tile 0.5) 0.5))
+     (shift-down (quarter-turn-left L-tile) 1))
+    )
+
+(define (calcolo-L L)
+  (glue-tiles
+   (
+  (glue-tiles
+  (glue-tiles
+  (glue-tiles
+   (L-media 1)
+   (shift-right(quarter-turn-right (L-media 1))2)
+   )
+   (shift-down(quarter-turn-left (L-media 1))2)
+   )
+  (shift-right(shift-down(L-media 1)1)1)
+  )
+  (L-tessellation (- L 4)
+
+  )
+  
