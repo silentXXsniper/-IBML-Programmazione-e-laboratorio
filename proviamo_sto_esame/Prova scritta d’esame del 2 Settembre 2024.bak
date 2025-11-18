@@ -1,3 +1,0 @@
-(define inter-fun
-  (lambda (f x k)
-     

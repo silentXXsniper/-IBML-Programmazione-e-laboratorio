@@ -19,7 +19,7 @@ Sono presenti tutti gli esercizi di laboratorio di **DrRacket** e **Java**.
 DrRacket utilizza il linguaggio _Intermediate Student with Lambda_ con alcune estensioni scaricabili dal sito  
 👉 [Del professor Mirolo](https://users.dimi.uniud.it/~claudio.mirolo/teaching/programmazione/)  
 o comunque già presenti all'interno della cartella  
-`/DrRacket estensioni`.
+`primo_semestre/DrRacket estensioni`.
 
 ### ☕ Java
 Java utilizza [BlueJ](https://www.bluej.org/), programma che abbiamo utilizzato per tutta la durata del corso.
